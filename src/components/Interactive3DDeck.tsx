@@ -14,6 +14,7 @@ export const Interactive3DDeck: React.FC<Interactive3DDeckProps> = ({
   const deckRef = useRef<HTMLDivElement>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const articleRefs = useRef<(HTMLElement | null)[]>([]);
+  const curIndexRef = useRef(0);
 
   useEffect(() => {
     let ticking = false;
@@ -39,7 +40,10 @@ export const Interactive3DDeck: React.FC<Interactive3DDeckProps> = ({
         }
       });
 
-      setActiveIndex(bestIndex);
+      if (bestIndex !== curIndexRef.current) {
+        curIndexRef.current = bestIndex;
+        setActiveIndex(bestIndex);
+      }
 
       if (deckRef.current) {
         const scrollY = window.scrollY || window.pageYOffset;
@@ -132,7 +136,7 @@ export const Interactive3DDeck: React.FC<Interactive3DDeckProps> = ({
                 onSelectService(srv);
               }}
             >
-              Book {srv.title.toLowerCase()}
+              {srv.actionText}
             </a>
           </article>
         ))}

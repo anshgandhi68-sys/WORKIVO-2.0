@@ -10,6 +10,7 @@ export interface ServiceItem {
   duration: string;
   rating: number;
   reviewsCount: number;
+  actionText: string;
   popularTasks: string[];
 }
 
@@ -26,6 +27,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "45–90 mins",
     rating: 4.9,
     reviewsCount: 1420,
+    actionText: "Book electrician",
     popularTasks: ["Switchboard & socket replacement", "MCB & fuse repair", "Fan & chandelier fitting", "Complete house rewiring check"],
   },
   {
@@ -40,6 +42,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "1–2 hours",
     rating: 4.9,
     reviewsCount: 2180,
+    actionText: "Book a cook",
     popularTasks: ["Everyday home-style lunch/dinner", "North & South Indian cuisines", "Party & guest catering", "Diet & healthy meal prep"],
   },
   {
@@ -54,6 +57,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "30–45 mins",
     rating: 4.8,
     reviewsCount: 1840,
+    actionText: "Book a barber",
     popularTasks: ["Men's hair styling & cut", "Beard grooming & trimming", "Head massage & hair spa", "Father & son combo haircut"],
   },
   {
@@ -68,6 +72,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "60–90 mins",
     rating: 4.9,
     reviewsCount: 3120,
+    actionText: "Book beauty care",
     popularTasks: ["Spa manicure & pedicure", "Glow facial & clean-up", "Waxing & threading", "Nail art & gel overlays"],
   },
   {
@@ -82,6 +87,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "1–2 hours",
     rating: 4.8,
     reviewsCount: 960,
+    actionText: "Book a carpenter",
     popularTasks: ["Door latch & hinge repair", "Bed assembly & creak fix", "Wardrobe handle & slide fix", "Custom shelf installation"],
   },
   {
@@ -96,6 +102,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "30–60 mins",
     rating: 4.9,
     reviewsCount: 2450,
+    actionText: "Book a plumber",
     popularTasks: ["Tap & faucet leak repair", "Toilet flush & cistern fix", "Drain blockage clearance", "Geyser pipe connection"],
   },
   {
@@ -110,6 +117,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "2–4 hours",
     rating: 4.9,
     reviewsCount: 4200,
+    actionText: "Book cleaning",
     popularTasks: ["Complete apartment deep clean", "Kitchen grease & tile clean", "Bathroom disinfection", "Sofa & mattress shampoo"],
   },
   {
@@ -124,6 +132,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "45–60 mins",
     rating: 4.8,
     reviewsCount: 1980,
+    actionText: "Book AC service",
     popularTasks: ["Jet pump power servicing", "Gas leak check & refill", "Water leakage fix", "New AC installation & uninstallation"],
   },
   {
@@ -138,6 +147,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "Half / Full day",
     rating: 4.9,
     reviewsCount: 870,
+    actionText: "Book movers",
     popularTasks: ["Local house shifting", "Multi-layer bubble packing", "Furniture dismantling & setup", "Office equipment relocation"],
   },
   {
@@ -152,6 +162,7 @@ export const WORKIVO_SERVICES: ServiceItem[] = [
     duration: "Same day / 24 hrs",
     rating: 4.8,
     reviewsCount: 1650,
+    actionText: "Book laundry",
     popularTasks: ["Wash & steam iron", "Dry cleaning for delicates", "Blanket & curtain wash", "Doorstep pickup & drop"],
   },
 ];
